@@ -1,1 +1,1 @@
-worker: python skynet.py
+worker: python ticTac.py
