@@ -1,9 +1,16 @@
 import discord
 from discord.ext import commands
+import cipher
 
 client = commands.Bot(command_prefix = '$')
 
 t = "NzgwMzA0MDgzNTkyMjgyMTIy.X7tIzg.YFPGxSxD_H7JwaQZKJ8gwHEUBlo"
+# security------------------
+f = open("token.txt", "r")
+t = f.read()
+f.close()
+#---------------------------
+t = cipher.dec(t) 
 
 @client.event
 async def on_ready():
