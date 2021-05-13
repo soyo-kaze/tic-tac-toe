@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 import cipher
 
-client = commands.Bot(command_prefix = '$')
+client = commands.Bot(command_prefix = '>')
 
 # security------------------
 f = open("token.txt", "r")
